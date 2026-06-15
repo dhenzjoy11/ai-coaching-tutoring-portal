@@ -1,13 +1,12 @@
 import { NavLink, useNavigate } from 'react-router-dom'
-import { LayoutDashboard, MessageSquare, BookOpen, Brain, TrendingUp, LogOut, GraduationCap } from 'lucide-react'
+import { LayoutDashboard, MessageSquare, Library, TrendingUp, LogOut, GraduationCap } from 'lucide-react'
 import { useAuthStore } from '../../store/authStore'
 import clsx from 'clsx'
 
 const navItems = [
   { to: '/dashboard', icon: LayoutDashboard, label: 'Dashboard' },
+  { to: '/learn', icon: Library, label: 'My Learning' },
   { to: '/chat', icon: MessageSquare, label: 'AI Tutor' },
-  { to: '/subjects', icon: BookOpen, label: 'Subjects' },
-  { to: '/quiz', icon: Brain, label: 'Quizzes' },
   { to: '/progress', icon: TrendingUp, label: 'Progress' },
 ]
 
@@ -39,6 +38,7 @@ export default function Sidebar() {
           <NavLink
             key={to}
             to={to}
+            end={to === '/dashboard'}
             className={({ isActive }) =>
               clsx(
                 'flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium transition-colors',

@@ -9,6 +9,11 @@ import ChatPage from './pages/ChatPage'
 import SubjectsPage from './pages/SubjectsPage'
 import QuizPage from './pages/QuizPage'
 import ProgressPage from './pages/ProgressPage'
+import SubjectHubPage from './pages/SubjectHubPage'
+import CurriculumPage from './pages/CurriculumPage'
+import LessonPage from './pages/LessonPage'
+import ClassroomPage from './pages/ClassroomPage'
+import PracticePage from './pages/PracticePage'
 
 function PrivateRoute({ children }: { children: React.ReactNode }) {
   const token = useAuthStore((s) => s.token)
@@ -40,6 +45,11 @@ export default function App() {
           <Route path="chat" element={<ChatPage />} />
           <Route path="chat/:sessionId" element={<ChatPage />} />
           <Route path="subjects" element={<SubjectsPage />} />
+          <Route path="learn" element={<SubjectHubPage />} />
+          <Route path="learn/:subjectSlug" element={<CurriculumPage />} />
+          <Route path="learn/:subjectSlug/lessons/:lessonId" element={<LessonPage />} />
+          <Route path="learn/:subjectSlug/lessons/:lessonId/classroom" element={<ClassroomPage />} />
+          <Route path="learn/:subjectSlug/lessons/:lessonId/practice" element={<PracticePage />} />
           <Route path="quiz" element={<QuizPage />} />
           <Route path="progress" element={<ProgressPage />} />
         </Route>

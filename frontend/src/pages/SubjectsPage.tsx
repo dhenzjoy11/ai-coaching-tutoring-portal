@@ -19,6 +19,7 @@ interface Subject {
   description: string
   icon: string
   color: string
+  is_active: boolean
   learning_paths: LearningPath[]
 }
 
@@ -70,9 +71,13 @@ export default function SubjectsPage() {
           {subjects.map((s) => (
             <button
               key={s.id}
-              onClick={() => setSelected(s)}
+              onClick={() => s.is_active && setSelected(s)}
+              disabled={!s.is_active}
               className={clsx(
-                'w-full card text-left hover:border-indigo-600 transition-colors flex items-center gap-4',
+                'w-full card text-left transition-colors flex items-center gap-4',
+                s.is_active
+                  ? 'hover:border-indigo-600 cursor-pointer'
+                  : 'opacity-40 cursor-not-allowed',
                 selected?.id === s.id && 'border-indigo-600'
               )}
             >
@@ -83,7 +88,10 @@ export default function SubjectsPage() {
                 <p className="font-medium text-white">{s.name}</p>
                 <p className="text-xs text-gray-400 truncate">{s.description}</p>
               </div>
-              <ChevronRight size={16} className="text-gray-600 flex-shrink-0" />
+              {s.is_active
+                ? <ChevronRight size={16} className="text-gray-600 flex-shrink-0" />
+                : <span className="text-xs text-gray-500 flex-shrink-0">Coming soon</span>
+              }
             </button>
           ))}
         </div>

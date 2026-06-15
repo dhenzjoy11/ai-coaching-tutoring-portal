@@ -1,4 +1,4 @@
-from sqlalchemy import Column, Integer, String, Text, ForeignKey, Float
+from sqlalchemy import Boolean, Column, Integer, String, Text, ForeignKey, Float
 from sqlalchemy.orm import relationship
 from app.database import Base
 
@@ -11,8 +11,10 @@ class Subject(Base):
     description = Column(Text, default="")
     icon = Column(String, default="book")
     color = Column(String, default="#6366f1")
+    is_active = Column(Boolean, default=True)
 
     learning_paths = relationship("LearningPath", back_populates="subject")
+    units = relationship("Unit", back_populates="subject", order_by="Unit.order_index")
 
 
 class LearningPath(Base):

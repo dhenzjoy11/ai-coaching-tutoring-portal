@@ -20,3 +20,4 @@ class User(Base):
     progress = relationship("UserProgress", back_populates="user")
     quiz_attempts = relationship("QuizAttempt", back_populates="user")
     activities = relationship("UserActivity", back_populates="user")
+    lesson_progress = relationship("LessonProgress", back_populates="user")

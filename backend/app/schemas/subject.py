@@ -33,6 +33,7 @@ class SubjectRead(BaseModel):
     description: str
     icon: str
     color: str
+    is_active: bool
     learning_paths: List[LearningPathRead] = []
 
     class Config:

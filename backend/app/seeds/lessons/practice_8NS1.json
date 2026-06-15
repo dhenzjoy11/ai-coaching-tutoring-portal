@@ -1,0 +1,476 @@
+[
+  {
+    "id": 1,
+    "type": "multiple_choice",
+    "question": "Which of the following numbers is irrational?",
+    "options": ["0.25", "√9", "√5", "-7"],
+    "answer": "√5",
+    "explanation": "√5 ≈ 2.2360679… — its decimal never terminates or repeats, so it cannot be written as p/q. The others simplify to exact fractions: 0.25 = 1/4, √9 = 3, -7 = -7/1."
+  },
+  {
+    "id": 2,
+    "type": "multiple_choice",
+    "question": "How would you classify the decimal 0.454545…?",
+    "options": [
+      "Rational, because it is a repeating decimal",
+      "Irrational, because it goes on forever",
+      "Irrational, because it has no pattern",
+      "Rational, because it terminates"
+    ],
+    "answer": "Rational, because it is a repeating decimal",
+    "explanation": "A decimal that repeats a block of digits is always rational. 0.454545… = 45/99 = 5/11."
+  },
+  {
+    "id": 3,
+    "type": "numeric",
+    "question": "What is the exact value of √64? (Enter a whole number)",
+    "placeholder": "e.g. 8",
+    "answer": "8",
+    "tolerance": 0,
+    "explanation": "8 × 8 = 64, so √64 = 8. Since the result is a whole number, √64 is rational."
+  },
+  {
+    "id": 4,
+    "type": "multiple_choice",
+    "question": "Between which two consecutive integers does √30 lie?",
+    "options": ["4 and 5", "5 and 6", "6 and 7", "3 and 4"],
+    "answer": "5 and 6",
+    "explanation": "5² = 25 and 6² = 36. Since 25 < 30 < 36, we get 5 < √30 < 6."
+  },
+  {
+    "id": 5,
+    "type": "multiple_choice",
+    "question": "A student says \"π = 22/7, so π is rational.\" Is the student correct?",
+    "options": [
+      "Yes — 22 ÷ 7 gives 3.14, which matches π",
+      "No — 22/7 only approximates π; π is non-terminating and non-repeating",
+      "Yes — any decimal can be written as a fraction",
+      "No — π is undefined"
+    ],
+    "answer": "No — 22/7 only approximates π; π is non-terminating and non-repeating",
+    "explanation": "22/7 ≈ 3.142857142857… (the block 142857 repeats). But π = 3.14159265358… never repeats. They are close but not equal. π is irrational."
+  },
+  {
+    "id": 6,
+    "type": "true_false",
+    "question": "Every rational number can be expressed as p/q, where p and q are integers and q ≠ 0.",
+    "options": ["True", "False"],
+    "answer": "True",
+    "explanation": "This is the definition of a rational number. For example: 3 = 3/1, 0.5 = 1/2, -2.75 = -11/4."
+  },
+  {
+    "id": 7,
+    "type": "multiple_choice",
+    "question": "Which set correctly classifies √49?",
+    "options": ["Irrational", "Rational", "Neither rational nor irrational", "Cannot be determined"],
+    "answer": "Rational",
+    "explanation": "√49 = 7, which is a whole number. Since 7 = 7/1, it is rational. Perfect squares always produce rational square roots."
+  },
+  {
+    "id": 8,
+    "type": "numeric",
+    "question": "Approximate √15 rounded to the nearest tenth. (Hint: 3² = 9 and 4² = 16)",
+    "placeholder": "e.g. 3.9",
+    "answer": "3.9",
+    "tolerance": 0.05,
+    "explanation": "√15 ≈ 3.872…, which rounds to 3.9. Since 15 is not a perfect square, √15 is irrational."
+  },
+  {
+    "id": 9,
+    "type": "multiple_choice",
+    "question": "Which of these decimals is irrational?",
+    "options": [
+      "0.5",
+      "0.333… (= 1/3)",
+      "0.142857142857… (= 1/7)",
+      "3.14159265358… (non-terminating, non-repeating)"
+    ],
+    "answer": "3.14159265358… (non-terminating, non-repeating)",
+    "explanation": "The first three are rational: 0.5 terminates; 0.333… and 0.142857… repeat. Only 3.14159… — a portion of π — neither terminates nor repeats, making it irrational."
+  },
+  {
+    "id": 10,
+    "type": "multiple_choice",
+    "question": "How is -√16 best classified?",
+    "options": [
+      "Irrational, because it involves a square root",
+      "Rational and negative",
+      "Not a real number",
+      "Positive integer"
+    ],
+    "answer": "Rational and negative",
+    "explanation": "-√16 = -4. Since -4 = -4/1, it is rational. The negative sign does not affect rationality — only the decimal behavior does."
+  },
+  {
+    "id": 11,
+    "type": "true_false",
+    "question": "The square root of any positive integer that is NOT a perfect square is irrational.",
+    "options": ["True", "False"],
+    "answer": "True",
+    "explanation": "If n is a positive integer that is not a perfect square, then √n is irrational. For example, √2, √3, √5, √6, √7, √8 are all irrational."
+  },
+  {
+    "id": 12,
+    "type": "multiple_choice",
+    "question": "Which number is rational?",
+    "options": ["√2", "√11", "√3", "√36"],
+    "answer": "√36",
+    "explanation": "√36 = 6, which is a whole number and therefore rational. The others — √2, √11, √3 — are non-perfect squares whose square roots are irrational."
+  },
+  {
+    "id": 13,
+    "type": "true_false",
+    "question": "All integers are rational numbers.",
+    "options": ["True", "False"],
+    "answer": "True",
+    "explanation": "Any integer n can be written as n/1, which fits the definition p/q with integer numerator and non-zero integer denominator. For example: -5 = -5/1, 0 = 0/1, 12 = 12/1."
+  },
+  {
+    "id": 14,
+    "type": "multiple_choice",
+    "question": "Which of the following is NOT a rational number?",
+    "options": ["3.75", "-8", "√11", "2/9"],
+    "answer": "√11",
+    "explanation": "11 is not a perfect square, so √11 ≈ 3.3166… is irrational. The others: 3.75 = 15/4, -8 = -8/1, 2/9 = 0.222… (repeating) are all rational."
+  },
+  {
+    "id": 15,
+    "type": "numeric",
+    "question": "What is the exact value of √121?",
+    "placeholder": "Enter a whole number",
+    "answer": "11",
+    "tolerance": 0,
+    "explanation": "11 × 11 = 121, so √121 = 11. Since the result is a whole number, √121 is rational."
+  },
+  {
+    "id": 16,
+    "type": "multiple_choice",
+    "question": "The decimal 0.1010010001… where each group of zeros grows by one is:",
+    "options": [
+      "Rational, because it follows a visible pattern",
+      "Irrational, because the repeating block never stays the same",
+      "Rational, because it only uses 0s and 1s",
+      "Irrational, because it is longer than 10 digits"
+    ],
+    "answer": "Irrational, because the repeating block never stays the same",
+    "explanation": "A repeating decimal must cycle the exact same block forever. Here the gaps grow (1 zero, 2 zeros, 3 zeros…), so no block ever repeats permanently. This decimal is irrational."
+  },
+  {
+    "id": 17,
+    "type": "true_false",
+    "question": "Every terminating decimal is a rational number.",
+    "options": ["True", "False"],
+    "answer": "True",
+    "explanation": "A terminating decimal has finitely many digits after the decimal point, so it can always be written as a fraction over a power of 10. For example: 0.375 = 375/1000 = 3/8."
+  },
+  {
+    "id": 18,
+    "type": "multiple_choice",
+    "question": "Which correctly classifies the fraction 7/8?",
+    "options": ["Irrational", "Rational", "Neither rational nor irrational", "Whole number"],
+    "answer": "Rational",
+    "explanation": "7/8 = 0.875, which terminates. Any fraction p/q with integer numerator and non-zero integer denominator is rational by definition."
+  },
+  {
+    "id": 19,
+    "type": "multiple_choice",
+    "question": "Between which two consecutive integers does √50 lie?",
+    "options": ["6 and 7", "7 and 8", "8 and 9", "5 and 6"],
+    "answer": "7 and 8",
+    "explanation": "7² = 49 and 8² = 64. Since 49 < 50 < 64, we have 7 < √50 < 8. (√50 ≈ 7.071)"
+  },
+  {
+    "id": 20,
+    "type": "numeric",
+    "question": "Round √2 to the nearest hundredth.",
+    "placeholder": "e.g. 1.41",
+    "answer": "1.41",
+    "tolerance": 0.005,
+    "explanation": "√2 = 1.41421356… The hundredths digit is 1, and the thousandths digit is 4 (< 5), so it stays 1.41. Since 2 is not a perfect square, √2 is irrational."
+  },
+  {
+    "id": 21,
+    "type": "true_false",
+    "question": "The sum of a rational number and an irrational number is always irrational.",
+    "options": ["True", "False"],
+    "answer": "True",
+    "explanation": "If rational + irrational = rational were possible, then irrational = rational − rational = rational — a contradiction. So the sum must always be irrational. Example: 3 + √2 is irrational."
+  },
+  {
+    "id": 22,
+    "type": "multiple_choice",
+    "question": "Which value lies between √3 ≈ 1.73 and √4 = 2?",
+    "options": ["1.5", "1.8", "2.1", "2.5"],
+    "answer": "1.8",
+    "explanation": "√3 ≈ 1.732 and √4 = 2. Among the choices, only 1.8 falls in the interval (1.732, 2). The others are either below √3 or above √4."
+  },
+  {
+    "id": 23,
+    "type": "multiple_choice",
+    "question": "How is √0 classified?",
+    "options": [
+      "Irrational, because 0 has no square root",
+      "Rational, because √0 = 0 = 0/1",
+      "Neither rational nor irrational",
+      "Undefined"
+    ],
+    "answer": "Rational, because √0 = 0 = 0/1",
+    "explanation": "√0 = 0. Zero is a whole number and equals 0/1, so it is rational."
+  },
+  {
+    "id": 24,
+    "type": "numeric",
+    "question": "What is the exact value of √225?",
+    "placeholder": "Enter a whole number",
+    "answer": "15",
+    "tolerance": 0,
+    "explanation": "15 × 15 = 225, so √225 = 15. Since the result is a whole number, √225 is rational."
+  },
+  {
+    "id": 25,
+    "type": "multiple_choice",
+    "question": "The decimal 0.666… (6 repeating) equals 2/3. How is it classified?",
+    "options": [
+      "Irrational, because it goes on forever",
+      "Rational, because it is a repeating decimal equal to 2/3",
+      "Neither rational nor irrational",
+      "Cannot be determined"
+    ],
+    "answer": "Rational, because it is a repeating decimal equal to 2/3",
+    "explanation": "0.666… = 2/3. All repeating decimals can be expressed as fractions, so they are rational."
+  },
+  {
+    "id": 26,
+    "type": "true_false",
+    "question": "The decimal 0.999… is exactly equal to 1 and therefore rational.",
+    "options": ["True", "False"],
+    "answer": "True",
+    "explanation": "Let x = 0.999…, then 10x = 9.999…, so 10x − x = 9, giving x = 1. Since 1 = 1/1 is rational, 0.999… is rational."
+  },
+  {
+    "id": 27,
+    "type": "multiple_choice",
+    "question": "Which value is closest to √10?",
+    "options": ["3.0", "3.2", "3.5", "4.0"],
+    "answer": "3.2",
+    "explanation": "√10 ≈ 3.1622… Among the choices, 3.2 is the closest (difference ≈ 0.038). 3² = 9 and 4² = 16 confirms √10 is between 3 and 4."
+  },
+  {
+    "id": 28,
+    "type": "multiple_choice",
+    "question": "Which list contains ONLY irrational numbers?",
+    "options": ["√2, √4, π", "√2, √3, π", "0.5, √2, π", "√9, √3, 2.5"],
+    "answer": "√2, √3, π",
+    "explanation": "√4 = 2 (rational), √9 = 3 (rational), 0.5 = 1/2 (rational), 2.5 = 5/2 (rational). Only √2, √3, and π are all irrational."
+  },
+  {
+    "id": 29,
+    "type": "true_false",
+    "question": "Every whole number is a rational number.",
+    "options": ["True", "False"],
+    "answer": "True",
+    "explanation": "Any whole number n can be written as n/1. For example: 5 = 5/1, 0 = 0/1, 12 = 12/1. All whole numbers are rational."
+  },
+  {
+    "id": 30,
+    "type": "multiple_choice",
+    "question": "What is √0.25?",
+    "options": [
+      "0.5, which is rational",
+      "Irrational, because 0.25 is a decimal",
+      "0.125",
+      "5, which is irrational"
+    ],
+    "answer": "0.5, which is rational",
+    "explanation": "√0.25 = √(1/4) = 1/2 = 0.5. Since 0.5 = 1/2 is in p/q form, it is rational."
+  },
+  {
+    "id": 31,
+    "type": "multiple_choice",
+    "question": "Between which two consecutive integers does √72 lie?",
+    "options": ["7 and 8", "8 and 9", "9 and 10", "6 and 7"],
+    "answer": "8 and 9",
+    "explanation": "8² = 64 and 9² = 81. Since 64 < 72 < 81, we have 8 < √72 < 9. (√72 ≈ 8.485)"
+  },
+  {
+    "id": 32,
+    "type": "numeric",
+    "question": "Round √20 to the nearest tenth. (Hint: 4² = 16 and 5² = 25)",
+    "placeholder": "e.g. 4.5",
+    "answer": "4.5",
+    "tolerance": 0.05,
+    "explanation": "√20 ≈ 4.472…. The tenths digit is 4 and the hundredths digit is 7 (≥ 5), so we round up to 4.5. Since 20 is not a perfect square, √20 is irrational."
+  },
+  {
+    "id": 33,
+    "type": "multiple_choice",
+    "question": "A student writes the decimal 1.23456789101112…, listing all positive integers in order. This number is:",
+    "options": [
+      "Rational, because it follows a clear pattern",
+      "Irrational, because it never terminates or repeats the same block",
+      "Rational, because it only uses digits 0–9",
+      "Rational, because we know what comes next"
+    ],
+    "answer": "Irrational, because it never terminates or repeats the same block",
+    "explanation": "Although predictable, this decimal (called the Champernowne constant) never enters a repeating cycle. A rational decimal must eventually repeat the exact same block forever. This one does not."
+  },
+  {
+    "id": 34,
+    "type": "true_false",
+    "question": "All fractions of the form p/q, where p and q are integers and q ≠ 0, are rational numbers.",
+    "options": ["True", "False"],
+    "answer": "True",
+    "explanation": "This is exactly the definition of rational numbers. The fraction does not need to be in lowest terms. For example: 6/4 = 3/2 is rational."
+  },
+  {
+    "id": 35,
+    "type": "multiple_choice",
+    "question": "Which of the following CANNOT be written as a fraction?",
+    "options": ["0.333…", "5", "√7", "-2.5"],
+    "answer": "√7",
+    "explanation": "√7 ≈ 2.6457513… is non-terminating and non-repeating — it cannot be expressed as p/q. The others: 0.333… = 1/3, 5 = 5/1, -2.5 = -5/2."
+  },
+  {
+    "id": 36,
+    "type": "multiple_choice",
+    "question": "What is the value of √100 + √4?",
+    "options": [
+      "12, which is rational",
+      "Irrational, because it involves square roots",
+      "√104",
+      "14, which is rational"
+    ],
+    "answer": "12, which is rational",
+    "explanation": "√100 = 10 and √4 = 2, so √100 + √4 = 12. The sum of two rational numbers is always rational. Not all expressions with √ are irrational!"
+  },
+  {
+    "id": 37,
+    "type": "numeric",
+    "question": "What is the exact value of √400?",
+    "placeholder": "Enter a whole number",
+    "answer": "20",
+    "tolerance": 0,
+    "explanation": "20 × 20 = 400, so √400 = 20. Since the result is a whole number, √400 is rational."
+  },
+  {
+    "id": 38,
+    "type": "multiple_choice",
+    "question": "Which of the following is irrational?",
+    "options": ["√25", "√13", "√16", "√100"],
+    "answer": "√13",
+    "explanation": "25, 16, and 100 are perfect squares (√25 = 5, √16 = 4, √100 = 10). But 13 is not a perfect square, so √13 ≈ 3.605… is irrational."
+  },
+  {
+    "id": 39,
+    "type": "true_false",
+    "question": "The product of two irrational numbers is always irrational.",
+    "options": ["True", "False"],
+    "answer": "False",
+    "explanation": "Counterexample: √2 × √2 = 2 (rational). Also √3 × √12 = √36 = 6 (rational). The product of two irrationals CAN be rational."
+  },
+  {
+    "id": 40,
+    "type": "multiple_choice",
+    "question": "Between which two consecutive integers does √8 lie?",
+    "options": ["1 and 2", "2 and 3", "3 and 4", "4 and 5"],
+    "answer": "2 and 3",
+    "explanation": "2² = 4 and 3² = 9. Since 4 < 8 < 9, we have 2 < √8 < 3. (√8 ≈ 2.828)"
+  },
+  {
+    "id": 41,
+    "type": "numeric",
+    "question": "Round √6 to the nearest tenth. (Hint: 2² = 4 and 3² = 9)",
+    "placeholder": "e.g. 2.4",
+    "answer": "2.4",
+    "tolerance": 0.05,
+    "explanation": "√6 ≈ 2.449…. The tenths digit is 4 and the hundredths digit is 4 (< 5), so it stays 2.4. Since 6 is not a perfect square, √6 is irrational."
+  },
+  {
+    "id": 42,
+    "type": "multiple_choice",
+    "question": "Which of the following is rational?",
+    "options": ["π", "√17", "0.125", "√50"],
+    "answer": "0.125",
+    "explanation": "0.125 = 1/8 (terminates). π is irrational, and √17 and √50 are irrational (17 and 50 are not perfect squares)."
+  },
+  {
+    "id": 43,
+    "type": "multiple_choice",
+    "question": "How would you classify √(16/25)?",
+    "options": [
+      "Irrational, because it involves a square root",
+      "Rational, because √(16/25) = 4/5",
+      "Neither rational nor irrational",
+      "Cannot be determined"
+    ],
+    "answer": "Rational, because √(16/25) = 4/5",
+    "explanation": "√(16/25) = √16 ÷ √25 = 4/5 = 0.8. Since 4/5 is in p/q form with integer numerator and denominator, it is rational."
+  },
+  {
+    "id": 44,
+    "type": "true_false",
+    "question": "Because π ≈ 3.14, we can conclude that π is rational.",
+    "options": ["True", "False"],
+    "answer": "False",
+    "explanation": "3.14 is a rational approximation of π, not the value of π itself. π = 3.14159265… continues forever without repeating. An approximation of an irrational number is not the same as the number itself."
+  },
+  {
+    "id": 45,
+    "type": "multiple_choice",
+    "question": "Which of the following is a perfect square?",
+    "options": ["50", "75", "144", "200"],
+    "answer": "144",
+    "explanation": "12 × 12 = 144. Perfect squares are integers that result from squaring another integer. 50, 75, and 200 cannot be written as n² for any integer n."
+  },
+  {
+    "id": 46,
+    "type": "numeric",
+    "question": "What is the value of √(9/16)? Enter as a decimal.",
+    "placeholder": "e.g. 0.75",
+    "answer": "0.75",
+    "tolerance": 0.01,
+    "explanation": "√(9/16) = √9 ÷ √16 = 3/4 = 0.75. Since 0.75 = 3/4 is a ratio of integers, it is rational."
+  },
+  {
+    "id": 47,
+    "type": "multiple_choice",
+    "question": "Between which two consecutive integers does √85 lie?",
+    "options": ["8 and 9", "9 and 10", "10 and 11", "7 and 8"],
+    "answer": "9 and 10",
+    "explanation": "9² = 81 and 10² = 100. Since 81 < 85 < 100, we have 9 < √85 < 10. (√85 ≈ 9.219)"
+  },
+  {
+    "id": 48,
+    "type": "multiple_choice",
+    "question": "The decimal 0.272727… equals 3/11. Is it rational or irrational?",
+    "options": [
+      "Irrational, because it goes on forever",
+      "Rational, because 0.272727… = 3/11",
+      "Irrational, because it looks non-terminating",
+      "Cannot be determined without more information"
+    ],
+    "answer": "Rational, because 0.272727… = 3/11",
+    "explanation": "0.272727… is a repeating decimal (the block \"27\" repeats endlessly). It equals 27/99 = 3/11. All repeating decimals are rational."
+  },
+  {
+    "id": 49,
+    "type": "true_false",
+    "question": "Irrational numbers can be approximated with decimals but can never be expressed exactly as fractions.",
+    "options": ["True", "False"],
+    "answer": "True",
+    "explanation": "By definition, irrational numbers cannot be written as p/q. We can find closer and closer decimal approximations (e.g., √2 ≈ 1.41, 1.414, 1.4142…), but no exact fraction ever equals √2."
+  },
+  {
+    "id": 50,
+    "type": "multiple_choice",
+    "question": "Which set contains ONLY rational numbers?",
+    "options": [
+      "{√2, 1/2, -3}",
+      "{π, 0.5, 4}",
+      "{4, 0.5, -3, 2/7}",
+      "{√3, √5, √7}"
+    ],
+    "answer": "{4, 0.5, -3, 2/7}",
+    "explanation": "4 = 4/1, 0.5 = 1/2, -3 = -3/1, and 2/7 are all rational. Option A has √2 (irrational), option B has π (irrational), and option D has all irrational numbers."
+  }
+]

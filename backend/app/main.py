@@ -3,12 +3,16 @@ from fastapi.middleware.cors import CORSMiddleware
 from contextlib import asynccontextmanager
 
 from app.database import engine, Base
-from app.api import chat, subjects, progress, quiz, voice, auth
+from app.api import chat, subjects, progress, quiz, voice, auth, curriculum, tts, practice
+from app.api.subjects import seed_subjects
+from app.seeds.curriculum_seed import seed_curriculum
 
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     Base.metadata.create_all(bind=engine)
+    seed_subjects()
+    seed_curriculum()
     yield
 
 
@@ -33,6 +37,9 @@ app.include_router(subjects.router, prefix="/api/subjects", tags=["subjects"])
 app.include_router(progress.router, prefix="/api/progress", tags=["progress"])
 app.include_router(quiz.router, prefix="/api/quiz", tags=["quiz"])
 app.include_router(voice.router, prefix="/api/voice", tags=["voice"])
+app.include_router(curriculum.router, prefix="/api/curriculum", tags=["curriculum"])
+app.include_router(tts.router, prefix="/api/tts", tags=["tts"])
+app.include_router(practice.router, prefix="/api/practice", tags=["practice"])
 
 
 @app.get("/")

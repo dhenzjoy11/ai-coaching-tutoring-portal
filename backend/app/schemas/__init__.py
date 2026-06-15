@@ -3,3 +3,4 @@ from app.schemas.chat import ChatMessageCreate, ChatMessageRead, ChatSessionRead
 from app.schemas.subject import SubjectRead, LearningPathRead, LearningStepRead
 from app.schemas.progress import UserProgressRead, UserActivityRead, DashboardStats
 from app.schemas.quiz import QuizCreate, QuizRead, QuizAttemptCreate, QuizAttemptRead
+from app.schemas.curriculum import UnitRead, LessonRead, LessonSummary, LessonProgressRead, LessonProgressUpdate

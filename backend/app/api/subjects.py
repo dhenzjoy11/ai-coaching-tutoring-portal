@@ -11,25 +11,26 @@ from app.services.ai_service import generate_learning_path
 router = APIRouter()
 
 DEFAULT_SUBJECTS = [
-    {"name": "Mathematics", "description": "Algebra, calculus, statistics and more", "icon": "calculator", "color": "#6366f1"},
-    {"name": "Science", "description": "Physics, chemistry, biology", "icon": "flask", "color": "#10b981"},
-    {"name": "Programming", "description": "Coding, algorithms, data structures", "icon": "code", "color": "#f59e0b"},
-    {"name": "History", "description": "World history, civilizations, events", "icon": "book", "color": "#ef4444"},
-    {"name": "Language Arts", "description": "Writing, grammar, literature", "icon": "pen", "color": "#8b5cf6"},
-    {"name": "Business", "description": "Economics, finance, entrepreneurship", "icon": "briefcase", "color": "#06b6d4"},
+    {"name": "Mathematics", "description": "Algebra, calculus, statistics and more", "icon": "calculator", "color": "#6366f1", "is_active": True},
+    {"name": "Programming", "description": "Coding, algorithms, data structures", "icon": "code", "color": "#f59e0b", "is_active": False},
 ]
+
+
+def seed_subjects():
+    from app.database import SessionLocal
+    db = SessionLocal()
+    try:
+        if not db.query(Subject).first():
+            for s in DEFAULT_SUBJECTS:
+                db.add(Subject(**s))
+            db.commit()
+    finally:
+        db.close()
 
 
 @router.get("", response_model=List[SubjectRead])
 def list_subjects(db: Session = Depends(get_db)):
-    subjects = db.query(Subject).all()
-    if not subjects:
-        for s in DEFAULT_SUBJECTS:
-            subject = Subject(**s)
-            db.add(subject)
-        db.commit()
-        subjects = db.query(Subject).all()
-    return subjects
+    return db.query(Subject).all()
 
 
 @router.get("/{subject_id}", response_model=SubjectRead)

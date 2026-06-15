@@ -66,3 +66,21 @@ export const voiceApi = {
   transcribeBase64: (audio_data: string, mime_type: string) =>
     api.post('/voice/transcribe/base64', { audio_data, mime_type }),
 }
+
+// Practice
+export const practiceApi = {
+  getProblems: (lessonId: number) => api.get(`/practice/lessons/${lessonId}`),
+  newSet: (lessonId: number, seenIds: number[]) =>
+    api.post(`/practice/lessons/${lessonId}/new-set`, { seen_ids: seenIds }),
+}
+
+// Curriculum
+export const curriculumApi = {
+  listUnits: (subjectId?: number) =>
+    api.get('/curriculum/units', { params: subjectId ? { subject_id: subjectId } : {} }),
+  getUnit: (id: number) => api.get(`/curriculum/units/${id}`),
+  getLesson: (id: number) => api.get(`/curriculum/lessons/${id}`),
+  updateProgress: (lessonId: number, status: string, score?: number) =>
+    api.post(`/curriculum/lessons/${lessonId}/progress`, { status, score }),
+  getMyProgress: () => api.get('/curriculum/progress'),
+}
